@@ -14,4 +14,8 @@ class WelcomeController extends Controller
         return 'Nama Saya Alex';
     }
 
+    public function greeting(){
+        return view('blog.hello', ['name' => 'Alex']);
+    }
+
 }

@@ -81,3 +81,13 @@ Route::resource('photos', PhotoController::class)->except([
     'update',
     'destroy'
 ]);
+
+
+Route::get('/greeting', function () {
+    return view('hello', ['name' => 'Alexander']);
+});
+
+Route::get('/greeting', [
+    WelcomeController::class,
+    'greeting'
+]);
