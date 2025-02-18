@@ -51,3 +51,8 @@ Route::get('/user/{name?}', function ($name=null){
     return "Nama saya\n". $name;
 });
 
+
+Route::get('/user/{name?}', function ($name='John') {
+    return 'Nama saya '.$name;
+    });
+
