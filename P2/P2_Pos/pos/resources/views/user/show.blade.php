@@ -9,3 +9,4 @@
     <p>Name: {{ $name }}</p>
 </body>
 </html>
+{{-- saya lupa ngepush ke setiap perubahan github --}}
